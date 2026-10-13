@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia | Estilo e Tradição</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-stone-100 text-stone-900">
+    <!-- CABEÇALHO -->
+    <header class="bg-stone-950 text-white">
+        <!-- Navegação -->
+        <nav class="flex items-center justify-between px-6 py-6 md:px-16 lg:px-24">
+            <a href="#" class="text-xl font-extrabold uppercase tracking-widest">
+                Barbearia<span class="text-amber-500">.</span>
+            </a>
+            <a href="#contato" class="rounded-lg border border-amber-500 px-5 py-2
+                      text-sm font-semibold text-amber-400
+                      transition hover:bg-amber-500 hover:text-stone-950">
+                Agendar horário
+            </a>
+        </nav>
+        <!-- Apresentação -->
+        <div class="flex flex-col justify-center gap-12 px-6 py-16
+                    md:flex-row md:items-center md:px-16 md:py-24
+                    lg:px-24">
+            <!-- Texto à esquerda -->
+            <div class="flex flex-col items-start gap-5 md:w-1/2">
+                <span class="text-sm font-semibold uppercase tracking-[0.25em]
+                             text-amber-500">
+                    Estilo, tradição e personalidade
+                </span>
+                <h1 class="text-4xl font-extrabold leading-tight
+                           md:text-5xl lg:text-6xl">
+                    Seu estilo começa <span class="text-amber-500">aqui.</span>
+                </h1>
+                <p class="max-w-lg leading-7 text-stone-300">
+                    Mais do que um corte, uma experiência.
+                    Cuidamos do seu visual com técnica, qualidade
+                    e atenção a cada detalhe.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-4">
+                    <a href="#contato" class="rounded-lg bg-amber-500 px-7 py-4
+                              font-bold text-stone-950 transition
+                              hover:bg-amber-400 hover:-translate-y-2">
+                        Agende seu horário →
+                    </a>
+                    <a href="#servicos" class="rounded-lg border border-stone-600 px-7 py-4
+                              font-semibold transition hover:border-amber-500 hover:-translate-y-2">
+                        Nossos serviços
+                    </a>
+                </div>
+            </div>
+            <!-- Imagem à direita -->
+            <div class="w-full md:w-1/2">
+                <img src="images/barbearia.webp" alt="Interior da barbearia" class="h-72 w-full rounded-2xl object-cover
+                           shadow-2xl md:h-[420px]">
+            </div>
+        </div>
+    </header>
+    <!-- INFORMAÇÕES -->
+    <main class="mx-auto max-w-7xl px-6 py-16 md:px-16 lg:px-24" class="servicos">
+        <div class="mb-10">
+            <span class="text-sm font-bold uppercase tracking-widest
+                         text-amber-600">
+                Planeje sua visita
+            </span>
+            <h2 class="mt-2 text-3xl font-extrabold md:text-4xl">
+                Tudo para você se organizar
+            </h2>
+            <p class="mt-3 max-w-2xl leading-7 text-stone-600">
+                Confira nossos horários e conheça os serviços
+                disponíveis antes de agendar.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <!-- Horários -->
+            <section class="rounded-2xl border border-stone-200
+                            bg-white p-8 shadow-sm transition
+                            hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                            rounded-xl bg-amber-100 text-2xl">
+                    ◷
+                </div>
+                <h2 class="text-2xl font-bold">
+                    Horários de atendimento
+                </h2>
+                <p class="mt-3 leading-7 text-stone-600">
+                    Estamos prontos para cuidar do seu visual.
+                    Consulte nossos horários de funcionamento.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm text-stone-700">
+                    <li class="flex justify-between gap-4 border-b
+                               border-stone-100 pb-3">
+                        <span>Segunda a sexta</span>
+                        <span class="font-semibold">09h às 19h</span>
+                    </li>
+                    <li class="flex justify-between gap-4 border-b
+                               border-stone-100 pb-3">
+                        <span>Sábado</span>
+                        <span class="font-semibold">09h às 17h</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <span>Domingo</span>
+                        <span class="font-semibold">Fechado</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Preços -->
+            <section id="servicos" class="rounded-2xl border border-stone-200
+                            bg-white p-8 shadow-sm transition
+                            hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                            rounded-xl bg-amber-100 text-2xl">
+                    $
+                </div>
+                <h2 class="text-2xl font-bold">
+                    Serviços e valores
+                </h2>
+                <p class="mt-3 leading-7 text-stone-600">
+                    Qualidade em cada detalhe, com serviços
+                    pensados para o seu estilo.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm text-stone-700">
+                    <li class="flex justify-between gap-4 border-b
+                               border-stone-100 pb-3">
+                        <span>Corte masculino</span>
+                        <span class="font-bold">R$ 40,00</span>
+                    </li>
+                    <li class="flex justify-between gap-4 border-b
+                               border-stone-100 pb-3">
+                        <span>Barba</span>
+                        <span class="font-bold">R$ 25,00</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <span>Corte + barba</span>
+                        <span class="font-bold">R$ 55,00</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="my-16">
+            <!-- Título da seção -->
+            <div class="mb-10">
+                <span class="text-sm font-bold uppercase tracking-widest text-amber-600">
+                    Conheça nossa equipe
+                </span>
+                <h2 class="mt-2 text-3xl font-extrabold md:text-4xl">
+                    Nossa equipe de profissionais
+                </h2>
+                <p class="mt-3 max-w-2xl leading-7 text-stone-600">
+                    Profissionais preparados e qualificados prontos para te ajudar.
+                </p>
+            </div>
+            <!-- Área dos cards -->
+            <section class="relative">
+                <!-- Navegação
+                <nav id="nav" aria-label="Navegação da equipe" class="pointer-events-none absolute inset-y-0 left-0 z-10
+                    flex w-full items-center justify-between">
+                    Voltar
+                    <button type="button" id="prev" aria-label="Profissional anterior" class="pointer-events-auto flex h-11 w-11
+                           -translate-x-4 items-center justify-center
+                           rounded-full bg-stone-950 text-xl font-bold
+                           text-amber-500 shadow-lg transition
+                           hover:bg-amber-500 hover:text-stone-950">
+                        &#10094;
+                    </button>
+                    vançar 
+                    <button type="button" id="next" aria-label="Próximo profissional" class="pointer-events-auto flex h-11 w-11
+                           translate-x-4 items-center justify-center
+                           rounded-full bg-stone-950 text-xl font-bold
+                           text-amber-500 shadow-lg transition
+                           hover:bg-amber-500 hover:text-stone-950">
+                        &#10095;
+                    </button>
+                </nav> -->
+                <!-- Cards -->
+                <div id="cards" class="grid grid-cols-1 gap-6 sm:grid-cols-2
+                    lg:grid-cols-3">
+                    <article class="overflow-hidden rounded-2xl bg-white
+                            shadow-sm ring-1 ring-stone-200 transition
+                            hover:-translate-y-1 hover:shadow-lg">
+                        <img src="images/barbeiro-1.jpg" alt="Barbeiro profissional" class="h-64 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">
+                                João Silva
+                            </h3>
+                            <p class="mt-1 text-sm font-semibold text-amber-600">
+                                Barbeiro profissional
+                            </p>
+                            <p class="mt-3 leading-6 text-stone-600">
+                                Especialista em cortes modernos e degradês.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="overflow-hidden rounded-2xl bg-white
+                            shadow-sm ring-1 ring-stone-200 transition
+                            hover:-translate-y-1 hover:shadow-lg">
+                        <img src="images/barbeiro-1.jpg" alt="Barbeiro profissional" class="h-64 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">
+                                Pedro Souza
+                            </h3>
+                            <p class="mt-1 text-sm font-semibold text-amber-600">
+                                Barbeiro profissional
+                            </p>
+                            <p class="mt-3 leading-6 text-stone-600">
+                                Especialista em cortes modernos e degradês.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="overflow-hidden rounded-2xl bg-white
+                            shadow-sm ring-1 ring-stone-200 transition
+                            hover:-translate-y-1 hover:shadow-lg">
+                        <img src="images/barbeiro-1.jpg" alt="Barbeiro profissional" class="h-64 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">
+                                Lucas Carlos
+                            </h3>
+                            <p class="mt-1 text-sm font-semibold text-amber-600">
+                                Barbeiro profissional
+                            </p>
+                            <p class="mt-3 leading-6 text-stone-600">
+                                Especialista em cortes modernos e degradês.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Adicione outros cards aqui -->
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- CONTATO -->
+    <footer id="contato" class="bg-stone-950 px-6 py-12 text-center text-white">
+        <h2 class="text-2xl font-extrabold">
+            Pronto para renovar seu visual?
+        </h2>
+        <p class="mt-3 text-stone-400">
+            Entre em contato e agende seu próximo corte.
+        </p>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block rounded-lg bg-amber-500
+                  px-7 py-4 font-bold text-stone-950
+                  transition hover:bg-amber-400">
+            Agendar pelo WhatsApp
+        </a>
+        <p class="mt-10 text-sm text-stone-500">
+            © 2026 Barbearia. Todos os direitos reservados.
+        </p>
+        <p class="mt-10 text-sm text-stone-500">
+            Desenvolvido por Victor
+        </p>
+    </footer>
+
+</body>
+
+</html>
