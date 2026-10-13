@@ -1,10 +1,10 @@
 
-# Deploy da landing page da barbearia no GitHub Pages
 name: Deploy Barbearia to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches:
+      - master
     paths:
       - "Portifolio/barbearia/**"
       - ".github/workflows/deploy.yml"
@@ -15,9 +15,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -26,20 +27,26 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v6
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
 
-      - name: Upload Barbearia
-        uses: actions/upload-pages-artifact@v3
+      - name: Verify website files
+        run: |
+          echo "Verificando pasta da barbearia..."
+          ls -la "Portifolio/barbearia"
+          test -f "Portifolio/barbearia/index.html"
+
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v5
         with:
           path: "Portifolio/barbearia"
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1
