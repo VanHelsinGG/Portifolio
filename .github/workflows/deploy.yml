@@ -39,13 +39,13 @@ jobs:
       - name: Verify website files
         run: |
           echo "Verificando pasta da barbearia..."
-          ls -la "Portifolio/Barbearia"
-          test -f "Portifolio/Barbearia/index.html"
+          ls -la "Barbearia/"
+          test -f "Barbearia/index.html"
 
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: "Portifolio/Barbearia"
+          path: "Barbearia/"
 
       - name: Deploy to GitHub Pages
         id: deployment
